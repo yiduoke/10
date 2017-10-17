@@ -11,7 +11,7 @@ c = db.cursor()    #facilitate db ops
 command = "CREATE TABLE IF NOT EXISTS courses (code TEXT, mark INTEGER, id INTEGER);"          #put SQL statement in this string
 c.execute(command)    #run SQL statement
 
-command = "CREATE TABLE IF NOT EXISTS peeps (code TEXT, mark INTEGER, id INTEGER);"          #put SQL statement in this string
+command = "CREATE TABLE IF NOT EXISTS peeps (name TEXT, age INTEGER, id INTEGER);"          #put SQL statement in this string
 c.execute(command)    #run SQL statement
 
 with open('data/courses.csv') as csvfile:
